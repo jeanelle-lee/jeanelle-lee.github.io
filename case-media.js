@@ -17,6 +17,7 @@
   const figure = document.querySelector('.care-sequence');
   if (!figure) return;
   const page = figure.closest('.paper');
+  const story = figure.closest('details');
   const frames = [...figure.querySelectorAll('.care-frame')];
   const modes = [...figure.querySelectorAll('[data-mode]')];
   const toggle = figure.querySelector('.care-toggle');
@@ -34,7 +35,7 @@
     count.textContent = before ? (index+1)+' / 3' : (index-2)+' / 4';
     toggle.textContent = index === frames.length-1 ? 'Replay' : paused ? 'Play' : 'Pause';
     next.disabled = index === frames.length-1;
-    if (!paused && !page.hidden && !document.hidden && index<frames.length-1) {
+    if (!paused && !page.hidden && !document.hidden && (!story || story.open) && index<frames.length-1) {
       timer = setTimeout(() => { index++; render(); }, 3600);
     }
   }
@@ -49,6 +50,7 @@
   });
   next.addEventListener('click', () => { index=Math.min(index+1,frames.length-1); paused=true; render(); });
   new MutationObserver(render).observe(page,{attributes:true,attributeFilter:['hidden']});
+  story?.addEventListener('toggle',render);
   document.addEventListener('visibilitychange',render);
   reduced.addEventListener('change',()=>{paused=reduced.matches;render()});
   render();
