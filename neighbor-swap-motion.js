@@ -112,7 +112,7 @@
   playStory('#pm-studio-plate .studio-plate', [
     ['scope', 7800, 'On a last-minute work trip, the traveler checks the desk, gets a booking confirmation moments later, and receives an itemized invoice.'],
     ['roadmap', 5100, 'For SmartHome, I put remote climate control and freeze protection first. Automation and budgeting came later on the roadmap.'],
-    ['test', 5400, 'For Surgical Replay XR, I proposed surgeon interviews and a low-cost prototype to test demand before building a full 3D replay system.'],
+    ['test', 5400, 'Could a 3D replay help a surgeon show a resident what a flat video misses? My study plan focused on depth, instrument angles, and how surgeons teach after an operation.'],
     ['jobs', 10400, 'A five-minute break stretches to twenty. On a different visit, the traveler finds a quiet café and leaves. Success depends on the job they came to do.']
   ]);
 })();
