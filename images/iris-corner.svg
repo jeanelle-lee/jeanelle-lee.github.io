@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 84 84" fill="none">
+  <defs>
+    <linearGradient id="foil" x1="4" y1="0" x2="68" y2="76" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#76542e"/><stop offset=".23" stop-color="#bd955a"/><stop offset=".46" stop-color="#8e6940"/><stop offset=".74" stop-color="#b38f58"/><stop offset="1" stop-color="#84643f"/>
+    </linearGradient>
+    <g id="sprig">
+      <path d="M15 15C27 24 29 7 40 8c8 1 7 11 1 11-4 0-5-4-3-6m5-4c10 1 16 0 24-5" stroke="url(#foil)" stroke-width="1.6"/>
+      <path d="M25 16c5 1 8 4 9 8-5-1-8-4-9-8ZM48 9c4-4 9-6 14-6-3 4-8 6-14 6Z" fill="#91aa93" stroke="#967542" stroke-width="1"/>
+      <path d="M55 10c5 0 8 1 12 3-5 1-9 0-12-3Z" fill="#ae8a54"/>
+      <circle cx="72" cy="3.8" r="1.45" fill="#a47a43"/>
+    </g>
+  </defs>
+  <path d="M2 79V8q0-6 6-6h71M7 64V27q0-6 6-9m5-5q3-6 9-6h37" stroke="url(#foil)" stroke-width="1.2"/>
+  <use href="#sprig"/><use href="#sprig" transform="matrix(0 1 1 0 0 0)"/>
+  <path d="M8 8c5-1 8 2 9 7 0 1 0 2-1 3-6-1-9-5-8-10Z" fill="#dac8e2" stroke="#987348" stroke-width="1.35"/>
+  <path d="m9 9 8 8m3 3c4 1 7 4 8 8-4-1-7-4-8-8Z" stroke="url(#foil)" stroke-width="1.2"/>
+</svg>
